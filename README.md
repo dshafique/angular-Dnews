@@ -1,3 +1,3 @@
 # angular-dnews
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-dnews)
+the future home of D news
