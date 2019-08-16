@@ -6,8 +6,11 @@ h1 {
 }
 .fancy-button{
   color: darkred;
-  padding:6px;
-  font-size: 16px
+  padding:2px;
+  font-size: 16px;
+  display: block;
+  margin: 5px
+  
 }
 i.material-icons{
   color: darkred;

@@ -7,20 +7,22 @@
     {{Phones.name}}
     </a>
   </h3>
-  <!--...-->
+  
 
   <p *ngIf ="Phones.description">
     Description: {{Phones.description}}
+    <br>
+    {{Phones.price | currency}}
     </p>
   
-  <button (click)="share()">
-    share
-    </button>
+  <!--<button (click)="share()">
+    Share
+    </button>-->
 
-    <app-product-alerts
+    <!--<app-product-alerts
       [Phones]="Phones"
       (notify)="onNotify()">
-    </app-product-alerts>
+    </app-product-alerts>-->
 
   </div>
 
