@@ -13,6 +13,9 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { HomeComponent } from './home/home.component';
+import { TwitchComponent } from './twitch/twitch.component';
+import { NewsComponent } from './news/news.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   imports: [
@@ -20,11 +23,14 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
+      { path: 'twitch', component: TwitchComponent },
+      { path: 'news', component: NewsComponent },
       { path: 'products', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      
     ])
   ],
   declarations: [
@@ -35,7 +41,10 @@ import { HomeComponent } from './home/home.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    HomeComponent
+    HomeComponent,
+    TwitchComponent,
+    NewsComponent,
+    ContactUsComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
