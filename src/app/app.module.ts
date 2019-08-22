@@ -17,6 +17,7 @@ import { TwitchComponent } from './twitch/twitch.component';
 import { NewsComponent } from './news/news.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TodoComponent } from './todo/todo.component';
+import { TodoService } from './todo/todo.service';
 
 @NgModule({
   imports: [
@@ -50,7 +51,7 @@ import { TodoComponent } from './todo/todo.component';
     TodoComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService]
+  providers: [CartService, TodoService]
 })
 export class AppModule { }
 
