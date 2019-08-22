@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { TwitchComponent } from './twitch/twitch.component';
 import { NewsComponent } from './news/news.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'todo', component: TodoComponent },
       
     ])
   ],
@@ -44,7 +46,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HomeComponent,
     TwitchComponent,
     NewsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    TodoComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
