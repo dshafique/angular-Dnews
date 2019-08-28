@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -20,6 +21,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TodoComponent } from './todo/todo.component';
 import { TodoService } from './todo/todo.service';
 
+/* const routes: Routes = [
+  { path: ':status', component: TodoComponent },
+  { path: '**', redirectTo: '/all' }
+];*/
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -35,6 +41,9 @@ import { TodoService } from './todo/todo.service';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'todo', component: TodoComponent },
+      { path: ':status', component: TodoComponent },
+      { path: '**', redirectTo: '/all' }
+      
       
     ])
   ],
