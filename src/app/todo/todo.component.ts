@@ -11,6 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 export class TodoComponent implements OnInit {
   private todos;
   private activeTasks;
+  private allTasks;
+  private leftTasks;
   private newTodo;
   private path;
 

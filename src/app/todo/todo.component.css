@@ -1,10 +1,12 @@
 html,
 body {
-	margin: 0;
-	padding: 2px;
+	margin: 20;
+	padding: 20px;
 }
 
 button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
 	margin: 2px;
 	padding: 2px;
 	border: 0;
@@ -21,7 +23,8 @@ button {
 }
 
 body {
-	font: 14px ;
+	font: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	line-height: 1.4em;
 	background: #f5f5f5;
 	color: #4d4d4d;
@@ -34,7 +37,7 @@ body {
 }
 
 :focus {
-	outline: 0;
+	outline: 2px;
 }
 
 .hidden {
@@ -43,36 +46,40 @@ body {
 
 .todoapp {
 	background: #fff;
-	margin: 130px 0 40px 0;
-	position: relative;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+	margin: 100px 10px 40px 10px;
+	position: absolute;
+	box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.2),
 	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .todoapp input::-webkit-input-placeholder {
-	font-style: italic;
-	font-weight: 300;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+  font-size: 25px;
 	color: #e6e6e6;
 }
 
 .todoapp input::-moz-placeholder {
-	font-style: italic;
-	font-weight: 300;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+  font-size: 25px;
 	color: #e6e6e6;
 }
 
 .todoapp input::input-placeholder {
-	font-style: italic;
-	font-weight: 300;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+  font-size: 25px;
 	color: #e6e6e6;
 }
 
 .todoapp h1 {
 	position: absolute;
-	top: -155px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	top: -200px;
 	width: 100%;
 	font-size: 100px;
-	font-weight: 100;
+	font-weight: 400;
 	text-align: center;
 	color: rgba(175, 47, 47, 0.15);
 	-webkit-text-rendering: optimizeLegibility;
@@ -82,6 +89,7 @@ body {
 
 .new-todo,
 .edit {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	position: relative;
 	margin: 0;
 	width: 100%;
@@ -99,13 +107,17 @@ body {
 }
 
 .new-todo {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	padding: 16px 16px 16px 60px;
 	border: none;
 	background: rgba(0, 0, 0, 0.003);
 	box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+  
 }
 
 .main {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
 	position: relative;
 	z-index: 2;
 	border-top: 1px solid #e6e6e6;
@@ -208,6 +220,9 @@ body {
 }
 
 .todo-list li label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
+  font-size: 15px ;
 	word-break: break-all;
 	padding: 15px 15px 15px 60px;
 	display: block;
@@ -216,11 +231,15 @@ body {
 }
 
 .todo-list li.completed label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
 	color: #d9d9d9;
 	text-decoration: line-through;
 }
 
 .todo-list li .destroy {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
 	display: none;
 	position: absolute;
 	top: 0;
@@ -269,7 +288,7 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	height: 50px;
+	height: 100px;
 	overflow: hidden;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
 	            0 8px 0 -3px #f6f6f6,
@@ -288,6 +307,7 @@ body {
 }
 
 .filters {
+  
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -301,12 +321,14 @@ body {
 }
 
 .filters li a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
 	color: inherit;
-	margin: 3px;
-	padding: 3px 7px;
+	margin: 2px;
+	padding: 2px 7px;
 	text-decoration: none;
 	border: 1px solid transparent;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 .filters li a:hover {
@@ -319,9 +341,15 @@ body {
 
 .clear-completed,
 html .clear-completed:active {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
+  color: blue;
 	float: right;
+  left: 300px;
+  bottom: 2px;
 	position: relative;
 	line-height: 20px;
+  width: 100%;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -343,10 +371,12 @@ html .clear-completed:active {
 }
 
 .info a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
 	color: inherit;
 	text-decoration: none;
 	font-weight: 400;
-}
+  }
 
 .info a:hover {
 	text-decoration: underline;
