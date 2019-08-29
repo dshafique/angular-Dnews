@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { NewsService } from './news/news.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,3 @@ import { Title } from '@angular/platform-browser';
 
 export class AppComponent {}
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, Title } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule } from '@angular/material';
+
+
+
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +24,8 @@ import { NewsComponent } from './news/news.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TodoComponent } from './todo/todo.component';
 import { TodoService } from './todo/todo.service';
+import { NewsService } from './news/news.service';
+
 
 /* const routes: Routes = [
   { path: ':status', component: TodoComponent },
@@ -44,8 +51,16 @@ import { TodoService } from './todo/todo.service';
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: 'twitch', component: TwitchComponent },
@@ -61,7 +76,7 @@ import { TodoService } from './todo/todo.service';
       
     ])
   ],
-  providers: [CartService, TodoService],
+  providers: [CartService, TodoService,NewsService],
   bootstrap: [ AppComponent ]
 
 })
