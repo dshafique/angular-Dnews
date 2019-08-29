@@ -14,13 +14,10 @@
 
   <section class="main">
 
-     <label for="toggle-all">Mark all as complete</label>
-    <input id="toggle-all" class="toggle-all" type="checkbox">
-
     <ul class="todo-list">
      <li *ngFor="let todo of todos" [ngClass]="{completed: todo.isDone, editing: todo.editing}" >
   <div class="view">
-    <input class="toggle" type="checkbox" [checked]="todo.isDone">
+    <input class="toggle" type="checkbox" [checked]="todo.isDone" (change)="todo.isDone = !todo.isDone">
     <label (dblclick)="todo.editing = true">{{todo.title}}</label>
     <button class="destroy"(click)="destroyTodo(todo)"></button>
   </div>
@@ -36,7 +33,7 @@
 
 
   <footer class="footer">
-  <span class="todo-count"><strong>{{activeTasks}}</strong> item left</span>
+  
     <ul class="filters">
       <li>
         <a [routerLink]="['/all']" [class.selected]="path === 'all'">All</a>
