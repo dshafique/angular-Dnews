@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-const TODOS = [
+let TODOS = [
   { title: 'Set up List', isDone: true },
   { title: 'Style List', isDone: true },
   { title: 'Style app', isDone: false },
@@ -15,6 +15,7 @@ const TODOS = [
 export class TodoService {
 
   constructor() { }
+
 
   get(query = '') {
   return new Promise(resolve => {

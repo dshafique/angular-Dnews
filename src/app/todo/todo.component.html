@@ -14,6 +14,9 @@
 
   <section class="main">
 
+     <label for="toggle-all">Mark all as complete</label>
+    <input id="toggle-all" class="toggle-all" type="checkbox">
+
     <ul class="todo-list">
      <li *ngFor="let todo of todos" [ngClass]="{completed: todo.isDone, editing: todo.editing}" >
   <div class="view">
@@ -33,7 +36,7 @@
 
 
   <footer class="footer">
-  
+  <span class="todo-count"><strong>{{activeTasks}}</strong> item left</span>
     <ul class="filters">
       <li>
         <a [routerLink]="['/all']" [class.selected]="path === 'all'">All</a>
