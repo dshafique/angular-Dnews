@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule, Title } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -27,6 +26,21 @@ import { TodoService } from './todo/todo.service';
 ];*/
 
 @NgModule({
+  declarations: [
+    AppComponent,
+    TopBarComponent,
+    ProductListComponent,
+    ProductAlertsComponent,
+    ProductDetailsComponent,
+    CartComponent,
+    ShippingComponent,
+    HomeComponent,
+    TwitchComponent,
+    NewsComponent,
+    ContactUsComponent,
+    TodoComponent
+  ],
+
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -42,27 +56,14 @@ import { TodoService } from './todo/todo.service';
       { path: 'shipping', component: ShippingComponent },
       { path: 'todo', component: TodoComponent },
       { path: ':status', component: TodoComponent },
-      { path: '**', redirectTo: '/all' }
+      { path: '**', redirectTo: '/home' }
       
       
     ])
   ],
-  declarations: [
-    AppComponent,
-    TopBarComponent,
-    ProductListComponent,
-    ProductAlertsComponent,
-    ProductDetailsComponent,
-    CartComponent,
-    ShippingComponent,
-    HomeComponent,
-    TwitchComponent,
-    NewsComponent,
-    ContactUsComponent,
-    TodoComponent
-  ],
-  bootstrap: [ AppComponent ],
-  providers: [CartService, TodoService]
+  providers: [CartService, TodoService],
+  bootstrap: [ AppComponent ]
+
 })
 export class AppModule { }
 

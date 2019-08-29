@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TodoService} from './todo.service';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-todo',
@@ -16,7 +17,7 @@ export class TodoComponent implements OnInit {
   private newTodo;
   private path;
 
- constructor(private todoService: TodoService, private route: ActivatedRoute) { }
+ public constructor(private todoService: TodoService, private route: ActivatedRoute) { }
 
   getTodos(query = ''){
   return this.todoService.get(query).then(todos => {
